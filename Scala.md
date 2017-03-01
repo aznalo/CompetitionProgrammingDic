@@ -17,7 +17,16 @@ readLine()
 ~~~scala
 var hgoe = 0
 //Int = 0
+val hoge = 0
+//定数を作ることができる
 ~~~~~
+
+##配列
+
+~~~scala
+var ary = new Array[Int](10) //空のInt配列を作る(String配列も作れる)
+var ary = Array(1, 2, 3) //値をあらかじめ入れて配列を作る
+~~~
 
 #よくつかうメソッド集
 
@@ -33,6 +42,17 @@ var hgoe = 0
 ~~~scala
 Array("1", "2", "3").map(_.toInt)
 //Array[Int] = Array(1, 2, 3)
+~~~
+
+##配列を連結する+a
+
+~~~scala
+val ary = Array(1, 2, 3)
+ary.mkString(",")
+//1,2,3
+
+"asdfg".mkString(",")
+//a,s,d,f,g
 ~~~
 
 #ループ処理
