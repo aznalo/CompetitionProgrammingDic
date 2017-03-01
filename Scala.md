@@ -52,7 +52,7 @@ for( i <- 1 to 10 ){
 
 ##for逆順
 ~~~scala
-for( i <- 1 to 10 ){
+for( i <- 10 to 1 by -1 ){
     println(i)
 } //10回ループする
 //10
