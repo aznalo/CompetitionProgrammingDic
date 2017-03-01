@@ -25,7 +25,9 @@ val hoge = 0
 
 ~~~scala
 var ary = new Array[Int](10) //空のInt配列を作る(String配列も作れる)
+// Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var ary = Array(1, 2, 3) //値をあらかじめ入れて配列を作る
+// Array[Int] = Array(1, 2, 3)
 ~~~
 
 #よくつかうメソッド集
