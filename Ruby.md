@@ -1,6 +1,8 @@
 #Methods for competition programming used in Scala
 
-# 標準入力
+#基本形
+
+## 標準入力
 
 ~~~ruby
 gets
@@ -72,6 +74,13 @@ ary[1] = "Int"
 ~~~ruby
 "1234".to_i
 #=>1234
+~~~
+
+##数値配列の最大値or最小値を持ってくる
+
+~~~ruby
+[10, 1, 50, 30, 2, 66].min #=> 1
+[10, 1, 50, 30, 2, 66].max #=> 66
 ~~~
 
 ##配列を逆向きに
