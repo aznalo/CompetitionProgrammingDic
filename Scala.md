@@ -40,7 +40,9 @@ Array("1", "2", "3").map(_.toInt)
 ##for文
 
 ~~~scala
-for( i <- 1 to 10 ){} //10回ループする
+for( i <- 1 to 10 ){
+    println(i)
+} //10回ループする
 //1
 //2
 //...
@@ -50,7 +52,9 @@ for( i <- 1 to 10 ){} //10回ループする
 
 ##for逆順
 ~~~scala
-for( i <- 1 to 10 ){} //10回ループする
+for( i <- 1 to 10 ){
+    println(i)
+} //10回ループする
 //10
 //9
 //...
@@ -62,7 +66,9 @@ for( i <- 1 to 10 ){} //10回ループする
 
 ~~~scala
 val list = List("a", "b", "c")
-for(i <- list) println(i)
+for(i <- list){
+    println(i)
+}
 //a
 //b
 //c
@@ -81,13 +87,13 @@ while(条件式){}
 ##if
 
 ~~~scala
-if (条件式) 0 else 1
+if (条件式) 値1 else  値2
 ~~~
 
 ##三項演算子
 
 ~~~scala
-int value = (条件式) ? 1 : 2
+int value = (条件式) ? 値1 : 値2
 ~~~
 
 ##Case
