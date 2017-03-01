@@ -9,7 +9,7 @@ object Main extends App{ }
 ##標準入力
 
 ~~~scala
-readLine
+readLine()
 ~~~
 
 ##変数
