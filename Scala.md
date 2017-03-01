@@ -110,12 +110,6 @@ while(条件式){}
 if (条件式) 値1 else  値2
 ~~~
 
-##三項演算子
-
-~~~scala
-int value = (条件式) ? 値1 : 値2
-~~~
-
 ##Case
 
 ~~~scala
