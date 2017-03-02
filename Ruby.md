@@ -1,5 +1,4 @@
-#Methods for competition programming used in Scala
-
+#Methods for competition programming used in Ruby
 #基本形
 
 ## 標準入力
