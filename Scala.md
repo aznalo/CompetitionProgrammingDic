@@ -30,6 +30,14 @@ var ary = Array(1, 2, 3) //値をあらかじめ入れて配列を作る
 // Array[Int] = Array(1, 2, 3)
 ~~~
 
+##関数
+
+~~~scala
+def methodName(引数:型):返り値の型={
+return(返り値)
+}
+~~~
+
 #よくつかうメソッド集
 
 ##文字列の分割
@@ -62,6 +70,22 @@ ary.mkString(",")
 ~~~scala
 "1234".toInt
 //Int = 1234
+~~~
+
+##切り上げ/切り捨て/四捨五入
+
+~~~scala
+import scala.math.ceil //切り上げ
+ceil(4.3) //5.0
+ceil(5.1) //6.0
+
+import scala.math.floor //切り捨て
+floor(4.3) //4.0
+floor(5.9) //5.0
+
+import scala.math.round //四捨五入
+round(5.4) //5
+round(4.5) //5
 ~~~
 
 #ループ処理
