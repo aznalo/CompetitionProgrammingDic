@@ -2,6 +2,7 @@
 
 現在追加されてる言語
 
+- [Go](https://github.com/JpnLavender/CompetitionProgrammingDic/blob/master/Go.md)
 - [Scala](https://github.com/JpnLavender/CompetitionProgrammingDic/blob/master/Scala.md)
 - [Ruby](https://github.com/JpnLavender/CompetitionProgrammingDic/blob/master/Ruby.md)
 
