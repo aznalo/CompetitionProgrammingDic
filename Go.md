@@ -8,9 +8,9 @@ import "os"
 import "bufio"
 
 var sc = bufio.NewScanner(os.Stdin)
-    if sc.Scan(){
-        sc.Text()
-    }
+if sc.Scan(){
+  sc.Text()
+}
 ~~~
 
 ## 変数
@@ -25,7 +25,7 @@ value := 16
 ## 配列の作成
 
 ~~~go
-ary := [...]int{1,2,3,4}
+ary := []int{1,2,3,4}
 //[]には配列の要素数を入れる
 //=> [1,2,3,4]
 
@@ -56,12 +56,6 @@ strings.Split("1,2,3", " ")
 //=>["1", "2", "3"]
 ~~~
 
-##配列の中身をすべてInt型に
-
-~~~go
-#=>[1, 2, 3]
-~~~
-
 ## 配列の連結
 
 ~~~go
@@ -77,19 +71,12 @@ strings.Join([1, 2, 3], " ")
 ~~~go
 import "strconv"
 
-strconv.Atoi("1234")
+strconv.Atoi("1234") //string -> int
 //=>1234
 
 //変数に入れる場合
 value, _ = strconv.Atoi("123")
 value //=> 123
-~~~
-
-##数値配列の最大値or最小値を持ってくる
-
-~~~go
-[10, 1, 50, 30, 2, 66].min #=> 1
-[10, 1, 50, 30, 2, 66].max #=> 66
 ~~~
 
 # ループ処理
