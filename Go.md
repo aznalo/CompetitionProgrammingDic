@@ -1,5 +1,5 @@
-#Methods for competition programming used in Ruby
-#基本形
+# Methods for competition programming used in Ruby
+# 基本形
 
 ## 標準入力
 
@@ -42,9 +42,9 @@ ary = append(ary, 99)
 // => [1, 2, 3, 4, 99]
 ~~~
 
-#よくつかうメソッド集
+# よくつかうメソッド集
 
-##文字列の分割
+## 文字列の分割
 ~~~go
 import "strings"
 
@@ -66,7 +66,7 @@ strings.Join([1, 2, 3], " ")
 //=> 1 2 3
 ~~~
 
-##文字列の変換
+## 文字列の変換
 
 ~~~go
 import "strconv"
@@ -106,7 +106,7 @@ for _, v := range ["a", "b", "c"]{
 //=>c
 ~~~
 
-#分岐処理
+# 分岐処理
 
 ## if
 if 条件式 {
