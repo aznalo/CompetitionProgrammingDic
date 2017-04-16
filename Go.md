@@ -15,6 +15,7 @@ if sc.Scan(){
 
 ## 変数
 var 変数名 型 = 値
+
 ~~~go
 var value int = 16
 //=>16
@@ -79,6 +80,23 @@ value, _ = strconv.Atoi("123")
 value //=> 123
 ~~~
 
+## 切り上げ・切り捨て
+
+~~~go
+import "math"
+
+13/2 //=> 6
+
+//切り上げ
+math.Ceil(floot(float64(13)/2)) //=> 7.000000
+
+//切り捨て
+math.Floor(floot(float64(13)/2)) //=> 6.000000
+
+//float -> Int型に
+int(6.000000) //=> 6
+~~~
+
 # ループ処理
 
 ## for
@@ -137,4 +155,47 @@ switch i {
     default: fmt.Println("default")
 }
 //=> number 5
+~~~
+
+# アルゴリズムテンプレート
+
+## 二分検索
+
+~~~go
+func binarySearch(list []int, num int) int {
+    var index = -1
+        var head = 0
+        var tail = len(list)
+
+        for head <= tail {
+            var center = int(math.Floor(float64((head + tail) / 2)))
+                var centerVal = list[center]
+
+                if centerVal == num {
+                    index = center
+                        break
+                }
+            if centerVal < num {
+                head = center + 1
+            } else {
+                tail = center - 1
+            }
+        }
+    return index
+}
+~~~
+
+## バブルソート
+
+~~~go
+func bubbleSort(a []int) []int {
+    for i := 0; i < len(a)-1; i++ {
+            for j := 0; j < len(a)-i-1; j++ {
+                        if a[j] > a[j+1] {
+                                        a[j], a[j+1] = a[j+1], a[j]
+                                    }
+                    }
+        }
+    return a
+}
 ~~~
