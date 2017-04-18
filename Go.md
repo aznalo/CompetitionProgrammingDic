@@ -199,3 +199,55 @@ func bubbleSort(a []int) []int {
     return a
 }
 ~~~
+
+## マージソート
+
+~~~go
+func main() {
+    values := []int{3, 6, 1, 4, 5, 2, 9, 8, 7, 10}
+    sortedValues := Sort(values)
+    fmt.Println(sortedValues)
+}
+
+func merge(left, right []int) (ret []int) {
+    ret = []int{}
+    for len(left) > 0 && len(right) > 0 {
+            var x int
+            if right[0] > left[0] {
+                        x, left = left[0], left[1:]
+                    } else {
+                                x, right = right[0], right[1:]
+                            }
+            ret = append(ret, x)
+        }
+    ret = append(ret, left...)
+    ret = append(ret, right...)
+    return
+}
+
+func sort(left, right []int) (ret []int) {
+    if len(left) > 1 {
+            l, r := split(left)
+            left = sort(l, r)
+        }
+    if len(right) > 1 {
+            l, r := split(right)
+            right = sort(l, r)
+        }
+
+    ret = merge(left, right)
+    return
+}
+
+func split(values []int) (left, right []int) {
+    left = values[:len(values)/2]
+    right = values[len(values)/2:]
+    return
+}
+
+func Sort(values []int) (ret []int) { //マージソートのメイン関数
+    left, right := split(values)
+    ret = sort(left, right)
+    return
+}
+~~~
