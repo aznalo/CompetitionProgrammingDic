@@ -67,6 +67,18 @@ strings.Join([1, 2, 3], " ")
 //=> 1 2 3
 ~~~
 
+## 配列同士の比較
+
+~~~go
+import "reflect"
+a := []byte{1, 2, 3}
+b := []byte{1, 2, 3, 4}
+
+fmt.Println(reflect.DeepEqual(a, b))             //=> false
+fmt.Println(reflect.DeepEqual(a, b[0:3]))        //=> true
+fmt.Println(reflect.DeepEqual(a, []byte{1,2,3})) //=> true
+~~~
+
 ## 文字列の変換
 
 ~~~go
